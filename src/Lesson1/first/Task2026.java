@@ -1,4 +1,4 @@
-package first;
+package Lesson1.first;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class Task2026 {
     public static void main(String[] args) {
-        File file = new File("texts/input_2026.txt");
+        File file = new File("Lesson1/texts/input_2026.txt");
         if(!file.exists()){
             System.out.println("Cannot open file");
             System.exit(1);
@@ -35,7 +35,7 @@ public class Task2026 {
 
 
 
-                            PrintWriter output = new java.io.PrintWriter("texts/output_2026.txt");
+                            PrintWriter output = new java.io.PrintWriter("Lesson1/texts/output_2026.txt");
                             for (int j = 0; j < numbers.length; j++) {
                                 boolean flag = true;
                                 for (int i = j; i < numbers.length; i++) {

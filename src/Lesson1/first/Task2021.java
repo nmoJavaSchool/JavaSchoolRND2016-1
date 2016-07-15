@@ -1,4 +1,4 @@
-package first;
+package Lesson1.first;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,9 +8,9 @@ import java.util.Scanner;
 /**
  * Created by user on 13.07.16.
  */
-public class Task2022 {
+public class Task2021 {
     public static void main(String[] args) {
-        File file = new File("texts/input_2022.txt");
+        File file = new File("Lesson1/texts/input_2021.txt");
         if(!file.exists()){
             System.out.println("Cannot open file");
             System.exit(1);
@@ -24,7 +24,7 @@ public class Task2022 {
                     if(count == 0)
                         count = Integer.parseInt(line);
                     else {
-                        int []numbers = Task2021.getInteger(line.split(" "));
+                        int []numbers = getInteger(line.split(" "));
                         if(numbers!=null && numbers.length>0) {
                             int maxIndex = 0;
 
@@ -35,19 +35,19 @@ public class Task2022 {
 
 
 
-                            PrintWriter output = new java.io.PrintWriter("texts/output_2022.txt");
-
-                            int amount = 0;
-                            for (int j = 0; j <maxIndex ; j++) {
+                            PrintWriter output = new java.io.PrintWriter("Lesson1/texts/output_2021.txt");
+                            for (int j = 0; j <2 ; j++) {
                                 for (int i = 0; i <maxIndex ; i++) {
-                                    if(j!=i && numbers[i]%numbers[j]==0){
-                                        ++amount;
-                                    }
+                                    if(numbers[i]>2)
+                                        numbers[i]=numbers[i]/2;
 
                                 }
                             }
+                            for (int i = 0; i <maxIndex ; i++) {
+                                output.print(numbers[i]+" ");
 
-                            output.print(amount);
+                            }
+
                             output.close();
                         }
                         break;
@@ -62,5 +62,15 @@ public class Task2022 {
             System.out.println("Exception: Cannot open file");
         }
     }
-
+    public static int[] getInteger(String [] arr){
+        int [] numbers = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            numbers[i] = Integer.parseInt(arr[i]);
+            if(numbers[i]<1 || numbers[i]>100) {
+                numbers = null;
+                break;
+            }
+        }
+        return numbers;
+    }
 }

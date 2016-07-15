@@ -1,4 +1,4 @@
-package first;
+package Lesson1.first;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -6,11 +6,11 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
- * Created by user on 12.07.16.
+ * Created by user on 13.07.16.
  */
-public class Task2002 {
+public class Task2009 {
     public static void main(String[] args) {
-        File file = new File("texts/input_2002.txt");
+        File file = new File("Lesson1/texts/input_2009.txt");
         if(!file.exists()){
             System.out.println("Cannot open file");
             System.exit(1);
@@ -19,6 +19,7 @@ public class Task2002 {
         try(Scanner input = new Scanner(file)){
             int sum = 0;
             int count = 0;
+            int index = 1;
             while(input.hasNext()){
                 String line = input.next();
                 try {
@@ -27,9 +28,11 @@ public class Task2002 {
                     else {
                         --count;
                         int number = Integer.parseInt(line);
-                        if (number >= 1 && number <= 1000)
-                            sum += number;
-
+                        if (number >= 1 && number <= 1000) {
+                            if(index%2 == 0 || index==1)
+                                sum+=number;
+                        }
+                        ++index;
                         if(count ==0) break;
                     }
                 }catch (NumberFormatException ne){
@@ -37,7 +40,7 @@ public class Task2002 {
                 }
             }
 
-            try (PrintWriter output = new java.io.PrintWriter("texts/output_2002.txt")) {
+            try (PrintWriter output = new java.io.PrintWriter("Lesson1/texts/output_2009.txt")) {
                 output.println(sum);
             }
         } catch (FileNotFoundException e) {

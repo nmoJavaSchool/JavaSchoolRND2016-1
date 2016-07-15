@@ -1,4 +1,4 @@
-package first;
+package Lesson1.first;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,43 +8,36 @@ import java.util.Scanner;
 /**
  * Created by user on 13.07.16.
  */
-public class Task2019 {
+public class Task2006 {
     public static void main(String[] args) {
-        File file = new File("texts/input_2019.txt");
+        File file = new File("Lesson1/texts/input_2006.txt");
         if(!file.exists()){
             System.out.println("Cannot open file");
             System.exit(1);
         }
 
         try(Scanner input = new Scanner(file)){
-            int position = 0;
+            int number = 0;
+            int foot = 0;
+            int inch = 0;
             while(input.hasNext()){
                 String line = input.next();
                 try {
-                    int number = Integer.parseInt(line);
-                    if(number>=1 && number <=(int)Math.pow(10,8)){
-                        int start = 0;
-                        int end;
-                        for (int i = 1; true ; i++) {
-                            end = i + start;
-                            if(number>=start && number<=end){
-                                position = i;
-                                break;
-                            }
-                            start = end;
-                        }
+                    number = Integer.parseInt(line);
+                    if(number>=1 && number <=1000){
+                        number = Math.round(number /3);
+                        foot = number/12;
+                        inch = number%12;
                     }
-
                 }catch (NumberFormatException ne){
-
                 }
                 finally {
                     break;
                 }
             }
 
-            try (PrintWriter output = new java.io.PrintWriter("texts/output_2019.txt")) {
-                output.println(position);
+            try (PrintWriter output = new java.io.PrintWriter("Lesson1/texts/output_2006.txt")) {
+                output.println(foot+" "+inch);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

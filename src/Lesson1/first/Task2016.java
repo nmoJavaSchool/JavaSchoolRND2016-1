@@ -1,4 +1,4 @@
-package first;
+package Lesson1.first;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class Task2016 {
     public static void main(String[] args) {
-        File file = new File("texts/input_2016.txt");
+        File file = new File("Lesson1/texts/input_2016.txt");
         if(!file.exists()){
             System.out.println("Cannot open file");
             System.exit(1);
@@ -27,7 +27,7 @@ public class Task2016 {
                         int b = strNumbers[1];
                         int c = strNumbers[2];
                         D = b*b - 4*a*c;
-                        PrintWriter output = new java.io.PrintWriter("texts/output_2016.txt");
+                        PrintWriter output = new java.io.PrintWriter("Lesson1/texts/output_2016.txt");
                         if(D>0)
                             output.println(2);
                         else if(D<0){

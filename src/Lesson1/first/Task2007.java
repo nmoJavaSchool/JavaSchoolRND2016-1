@@ -1,4 +1,4 @@
-package first;
+package Lesson1.first;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,40 +8,39 @@ import java.util.Scanner;
 /**
  * Created by user on 13.07.16.
  */
-public class Task2009 {
+public class Task2007 {
     public static void main(String[] args) {
-        File file = new File("texts/input_2009.txt");
+        File file = new File("Lesson1/texts/input_2007.txt");
         if(!file.exists()){
             System.out.println("Cannot open file");
             System.exit(1);
         }
 
         try(Scanner input = new Scanner(file)){
-            int sum = 0;
+            int number = 0;
             int count = 0;
-            int index = 1;
             while(input.hasNext()){
                 String line = input.next();
                 try {
-                    if(count == 0)
-                        count = Integer.parseInt(line);
-                    else {
-                        --count;
-                        int number = Integer.parseInt(line);
-                        if (number >= 1 && number <= 1000) {
-                            if(index%2 == 0 || index==1)
-                                sum+=number;
+                    number = Integer.parseInt(line);
+                    if(number>=1 && number <=(int)Math.pow(10,9)){
+                        String bin = Integer.toBinaryString(number);
+                        for (int i = bin.length()-1; i >=0 ; i--) {
+                            if(bin.charAt(i)=='0')
+                                ++count;
+                            else
+                                break;
                         }
-                        ++index;
-                        if(count ==0) break;
                     }
                 }catch (NumberFormatException ne){
-
+                }
+                finally {
+                    break;
                 }
             }
 
-            try (PrintWriter output = new java.io.PrintWriter("texts/output_2009.txt")) {
-                output.println(sum);
+            try (PrintWriter output = new java.io.PrintWriter("Lesson1/texts/output_2007.txt")) {
+                output.println(count);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

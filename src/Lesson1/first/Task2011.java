@@ -1,4 +1,4 @@
-package first;
+package Lesson1.first;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class Task2011 {
     public static void main(String[] args) {
-        File file = new File("texts/input_2011.txt");
+        File file = new File("Lesson1/texts/input_2011.txt");
         if(!file.exists()){
             System.out.println("Cannot open file");
             System.exit(1);
@@ -40,7 +40,7 @@ public class Task2011 {
                 break;
             }
 
-            try (PrintWriter output = new java.io.PrintWriter("texts/output_2011.txt")) {
+            try (PrintWriter output = new java.io.PrintWriter("Lesson1/texts/output_2011.txt")) {
                 output.println(result);
             }
         } catch (FileNotFoundException e) {
