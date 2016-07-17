@@ -3,7 +3,6 @@ package Lesson1.first;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -29,8 +28,6 @@ public class Task2051 {
         }
     }
     public static void main(String[] args) {
-//        System.out.println(new File("").getAbsolutePath());
-//        File file = new File(new File("").getAbsolutePath()+"/out/production/JavaSchoolRND2016/Lesson1/texts/input_2051.txt");
         File file = new File("Lesson1/texts/input_2051.txt");
         if(!file.exists()){
             System.out.println("Cannot open file");
@@ -43,7 +40,6 @@ public class Task2051 {
             while(input.hasNext()){
                 String line = input.nextLine();
                 if(line.length()<=1000) {
-                    String result = "";
                     String []sym = line.split("");
 
                     if(sym.length%2==0) {
