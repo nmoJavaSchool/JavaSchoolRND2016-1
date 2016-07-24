@@ -5,49 +5,51 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created by user on 23.07.16.
+ * Created by user on 24.07.16.
  */
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
-        LinkedList<String> list= new LinkedList<>();
-        list.add("Russia");
-        list.add("the USA");
-        list.add(0,"Canada");
+        LinkedList<Number> list= new LinkedList<>();
+        list.add(111);
+        list.add(222);
+        list.add(0,333);
         System.out.println(list);
         System.out.println(list.get(2));
         System.out.println(list.remove(0));
         System.out.println(list);
-        list.add(0,"China");
+        list.add(0,444);
         System.out.println(list);
-        for (String s: list)
-            System.out.print(s.toUpperCase() + " ");
+        for (Number s: list)
+            System.out.print(s + " ");
 
         System.out.println();
-        List<String> array = new ArrayList<>();
-        array.add("I");
-        array.add("see");
-        array.add("you");
+        List<Integer> array = new ArrayList<>();
+        array.add(-8);
+        array.add(-9);
+        array.add(-7);
 
         list.addAll(array);
         System.out.println(list);
         System.out.println("\n--------------------------");
 
 
-        MyLinkedList<String> myList = new MyLinkedList<>();
-        myList.add("Russia");
-        myList.add("the USA");
-        myList.add(0,"Canada");
+        MyLinkedList<Number> myList = new MyLinkedList<>();
+        myList.add(111);
+        myList.add(222);
+        myList.add(0,333);
         System.out.println(myList);
         System.out.println(myList.get(2));
         System.out.println(myList.remove(0));
         System.out.println(myList);
-        myList.add(0,"China");
+        myList.add(0,444);
         System.out.println(myList);
-        for (String s: myList)
-            System.out.print(s.toUpperCase() + " ");
+        for (Number s: myList)
+            System.out.print(s + " ");
 
         System.out.println();
         myList.addAll(array);
+        System.out.println(myList);
+        myList.copy(array);
         System.out.println(myList);
 
     }

@@ -1,5 +1,6 @@
 package Lesson4.HomeWork;
 
+import java.util.Collection;
 import java.util.Iterator;
 
 /**
@@ -52,6 +53,29 @@ public class MyLinkedList<E> implements Iterable<E>{
         }else{
             throw new IndexOutOfBoundsException("Index: "+ index + ", Size: " + size);
         }
+    }
+
+    public boolean addAll(Collection<? extends  E> value){
+        try {
+            for (E e : value) {
+                add(e);
+            }
+        }catch (Exception ex){
+            return false;
+        }
+        return true;
+    }
+
+    public boolean copy(Collection<? extends  E> value){
+        try {
+            head = tail = null;
+            for (E e : value) {
+                add(e);
+            }
+        }catch (Exception ex){
+            return false;
+        }
+        return true;
     }
 
     public E get(int index) throws IndexOutOfBoundsException{
