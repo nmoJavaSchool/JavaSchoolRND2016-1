@@ -7,7 +7,6 @@ import java.util.Iterator;
  * Created by user on 23.07.16.
  */
 
-//TODO Need to add the Wildcards
 public class MyLinkedList<E> implements Iterable<E>{
     private Node<E> head = null;
     private Node<E> tail = null;
