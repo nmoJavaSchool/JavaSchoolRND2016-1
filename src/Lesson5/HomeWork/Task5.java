@@ -38,7 +38,7 @@ public class Task5 {
         Scanner input = new Scanner(urlOfSite.openStream());
         String line = "";
         while (input.hasNext()) {
-            line += input.nextLine();
+            line += input.nextLine() + "\n";
         }
         return line;
     }
