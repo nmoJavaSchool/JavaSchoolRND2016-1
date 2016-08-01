@@ -1,3 +1,4 @@
 http://tutorials.jenkov.com/java-reflection/index.html
 http://www.quizful.net/post/java-reflection-api
 http://www.javenue.info/post/84
+http://leodev.ru/blog/java/java-reflection-tutorial/java-dynamic-proxy/
