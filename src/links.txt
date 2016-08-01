@@ -5,3 +5,8 @@ http://leodev.ru/blog/java/java-reflection-tutorial/java-dynamic-proxy/
 
 
 bvvmail@gmail.com
+***Java Class Loader***
+http://samolisov.blogspot.ru/2008/01/java.html
+http://www.quizful.net/post/Java
+http://samag.ru/archive/article/68
+http://www.java2s.com/Tutorials/Java/index.htm
