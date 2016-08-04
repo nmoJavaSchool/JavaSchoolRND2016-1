@@ -8,6 +8,8 @@ import java.util.ArrayList;
  */
 public class Main {
     public static void main(String[] args) {
+        Plugin3 plugin3 = new Plugin3();
+        plugin3.doSomething();
         String path =  System.getProperty("user.dir");
         path += "/out/production/JavaSchoolRND2016/";
 
@@ -31,6 +33,19 @@ public class Main {
                 plugin.doSomething();
 
             }
+
+//            Plugin plugin = null;
+//            try {
+//                plugin = (Plugin3) Class.forName("Lesson7.HomeWork.ru.sbt.mipt.Plugin3").newInstance();
+//                plugin.doSomething();
+//            } catch (ClassNotFoundException e) {
+//                e.printStackTrace();
+//            } catch (InstantiationException e) {
+//                e.printStackTrace();
+//            } catch (IllegalAccessException e) {
+//                e.printStackTrace();
+//            }
+
         }
     }
     public static void findFiles(File file, String wordStr, ArrayList<File> arrayList) {

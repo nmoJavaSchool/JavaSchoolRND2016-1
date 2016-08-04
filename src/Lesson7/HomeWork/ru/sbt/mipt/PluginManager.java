@@ -45,4 +45,29 @@ public class PluginManager extends ClassLoader{
         else
             return str.replace('.', '\\');
     }
+
+//    @Override
+//    public Class<?> loadClass(String name) throws ClassNotFoundException {
+//        try {
+//            URL myUrl = new URL("file:" + pluginRootDirectory + normalize(name, pluginRootDirectory) + ".class");
+//            URLConnection connection = myUrl.openConnection();
+//            InputStream input = connection.getInputStream();
+//            ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+//            int data = input.read();
+//
+//            while (data != -1) {
+//                buffer.write(data);
+//                data = input.read();
+//            }
+//
+//            input.close();
+//
+//            byte[] classData = buffer.toByteArray();
+//
+//            return defineClass(name,
+//                    classData, 0, classData.length);
+//        }catch (Exception e){
+//            return null;
+//        }
+//    }
 }
