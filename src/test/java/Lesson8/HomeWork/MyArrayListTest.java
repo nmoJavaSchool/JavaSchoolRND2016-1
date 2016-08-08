@@ -42,4 +42,8 @@ public class MyArrayListTest {
             assertEquals(tempArray.get(counter++),value);
         }
     }
+    @Test(expected=IndexOutOfBoundsException.class)
+    public void testOfIndexOutOfBoundsException(){
+        arrayList.get(10);
+    }
 }

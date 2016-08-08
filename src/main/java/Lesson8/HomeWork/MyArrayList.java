@@ -55,7 +55,12 @@ public class MyArrayList<E> implements Iterable<E>{
         return size;
     }
 
-    public E get(int index){
-        return data[index];
+    public E get(int index) {
+        if(index<0 || index>=size){
+            throw new IndexOutOfBoundsException("Index Out Of Bounds");
+        }else
+        {
+            return data[index];
+        }
     }
 }
