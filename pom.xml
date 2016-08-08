@@ -36,6 +36,7 @@
                 <updatePolicy>never</updatePolicy>
             </releases>
         </pluginRepository>
+
     </pluginRepositories>
 
     <build>
