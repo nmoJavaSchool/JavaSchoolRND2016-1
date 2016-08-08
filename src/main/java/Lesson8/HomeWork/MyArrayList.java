@@ -15,7 +15,7 @@ public class MyArrayList<E> implements Iterable<E>{
     }
     public MyArrayList(E[] objects) {
         for (int i = 0; i < objects.length; i++)
-            add(objects[i]); // Warning: don't use super(objects)!
+            add(objects[i]);
     }
 
     public void add(E e) {
@@ -24,7 +24,7 @@ public class MyArrayList<E> implements Iterable<E>{
 
         size++;
     }
-    /** Create a new larger array, double the current size + 1 */
+
     private void ensureCapacity() {
         if (size >= data.length) {
             E[] newData = (E[])(new Object[size * 2 + 1]);
