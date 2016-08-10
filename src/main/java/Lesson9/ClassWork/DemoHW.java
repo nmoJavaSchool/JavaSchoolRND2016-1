@@ -1,4 +1,4 @@
-package Lesson9.HomeWork;
+package Lesson9.ClassWork;
 
 import java.io.Console;
 import java.io.File;
