@@ -19,14 +19,10 @@ public class CounterThread extends Thread {
 
     @Override
     public void run() {
-        for (int i = start; i <= end; i++) {
+        for (int i = start; i < end; i++) {
             String item = list.get(i);
-//            for (int j = 0; j < item.length() ; j++) {
-//                ++sumOfCharacter;
-//            }
             sumOfCharacter += item.length();
         }
-//        System.out.println(sumOfCharacter);
     }
 
     public int getSumOfCharacter() {
