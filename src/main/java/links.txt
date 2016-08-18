@@ -14,3 +14,5 @@ http://www.java2s.com/Tutorials/Java/index.htm
 http://www.apofig.com/2011/11/mockito.html
 //---------------------------------------------------------------------
 https://habrahabr.ru/post/160817/ course C50
+
+http://jdevnotes.blogspot.ru/2011/05/volatile.html
