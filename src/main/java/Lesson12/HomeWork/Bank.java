@@ -47,7 +47,7 @@ public class Bank extends Thread {
                 } while (cashOperation > deposit);
 
                 System.out.println("Bank has $" + deposit + " *** Operation " +
-                        numberOfOperation + ": = " + (-cashOperation));
+                        numberOfOperation + ": = " + "-$" + cashOperation);
 //                System.out.println("\t\t\t\t\t(Thread №" + numberOfOperation +
 //                        " is finished)");
 
