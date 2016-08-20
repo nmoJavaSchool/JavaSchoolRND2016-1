@@ -6,17 +6,17 @@ import java.util.Random;
  * Created by user on 20.08.16.
  */
 public class Bank extends Thread {
-    private int deposite;
+    private int deposit;
     private int counterOfThread;
 
     public Bank(int deposite, int counterOfThread) {
-        this.deposite = deposite;
+        this.deposit = deposite;
         this.counterOfThread = counterOfThread;
     }
 
     @Override
     public void run() {
-        while (deposite != 0) {
+        while (deposit != 0) {
             for (int i = 0; i < counterOfThread; i++) {
                 Operation operation = new Operation(String.valueOf(i));
                 operation.start();
@@ -39,19 +39,19 @@ public class Bank extends Thread {
 
         @Override
         public void run() {
-            if (deposite != 0) {
+            if (deposit != 0) {
                 int cashOperation;
                 do {
                     cashOperation = new Random().nextInt(100) + 1; // 1..100
 
-                } while (cashOperation > deposite);
+                } while (cashOperation > deposit);
 
-                System.out.println("Bank has $" + deposite + " *** Operation " +
+                System.out.println("Bank has $" + deposit + " *** Operation " +
                         numberOfOperation + ": = " + (-cashOperation));
 //                System.out.println("\t\t\t\t\t(Thread №" + numberOfOperation +
 //                        " is finished)");
 
-                deposite -= cashOperation;
+                deposit -= cashOperation;
 
                 try {
                     Thread.sleep(1000);
