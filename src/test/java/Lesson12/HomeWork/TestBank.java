@@ -1,32 +1,42 @@
 package Lesson12.HomeWork;
 
+import org.junit.Before;
+import org.junit.Test;
+
 import java.util.Random;
+import static org.junit.Assert.*;
 
 /**
- * Created by user on 20.08.16.
+ * Created by user on 21.08.16.
  */
-public class Bank extends Thread {
+public class TestBank {
     private int deposit;
     private int counterOfThread;
-
-    public Bank(int deposit, int counterOfThread) {
-        this.deposit = deposit;
-        this.counterOfThread = counterOfThread;
+    @Before
+    public void setUp() {
+        deposit = 1000;
+        counterOfThread = 3;
     }
 
-    @Override
-    public void run() {
+    @Test
+    public void testmakeThreads(){
+        int temp = deposit;
         while (deposit != 0) {
             for (int i = 0; i < counterOfThread; i++) {
                 Operation operation = new Operation(String.valueOf(i));
                 operation.start();
+
                 try {
                     operation.join();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                assertNotEquals(temp,deposit);
+                temp = deposit;
             }
         }
+        assertEquals(deposit,0);
+
     }
 
     class Operation extends Thread {
@@ -46,16 +56,8 @@ public class Bank extends Thread {
 
                 } while (cashOperation > deposit);
 
-                System.out.println("Bank has $" + deposit + " *** Operation " +
-                        numberOfOperation + ": = " + "-$" + cashOperation);
-
                 deposit -= cashOperation;
 
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
             }
         }
     }
