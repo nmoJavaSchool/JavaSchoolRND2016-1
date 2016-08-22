@@ -20,6 +20,7 @@ public class Bank extends Thread {
 
     @Override
     public void run() {
+        System.out.println("Bank has $" + deposit);
         ExecutorService executor = Executors.newCachedThreadPool();
 
         for (int i = 0; i < counterOfThread; i++) {
@@ -27,7 +28,6 @@ public class Bank extends Thread {
             executor.execute(operation);
         }
         executor.shutdown();
-
     }
 
     class Operation extends Thread {
@@ -52,9 +52,7 @@ public class Bank extends Thread {
                     } while (cashOperation > deposit && deposit>0);
 
                     if(deposit>0 ) {
-                        System.out.println("Bank has $" + deposit + " *** Operation " +
-                                numberOfOperation + ": = " + "-$" + cashOperation);
-
+                        System.out.println("\t\t*** Operation " + numberOfOperation + ": = " + "-$" + cashOperation);
                         deposit -= cashOperation;
                     }
                     try {
