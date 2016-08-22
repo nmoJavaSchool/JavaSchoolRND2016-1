@@ -1,32 +1,33 @@
 package Lesson12.HomeWork;
 
 import java.util.Random;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * Created by user on 20.08.16.
  */
 public class Bank extends Thread {
-    private int deposit;
+    private Integer deposit;
     private int counterOfThread;
+    private int constDepost;
 
     public Bank(int deposit, int counterOfThread) {
         this.deposit = deposit;
         this.counterOfThread = counterOfThread;
+        constDepost = deposit;
     }
 
     @Override
     public void run() {
-        while (deposit != 0) {
-            for (int i = 0; i < counterOfThread; i++) {
-                Operation operation = new Operation(String.valueOf(i));
-                operation.start();
-                try {
-                    operation.join();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+        ExecutorService executor = Executors.newCachedThreadPool();
+
+        for (int i = 0; i < counterOfThread; i++) {
+            Operation operation = new Operation(String.valueOf(i));
+            executor.execute(operation);
         }
+        executor.shutdown();
+
     }
 
     class Operation extends Thread {
@@ -39,24 +40,33 @@ public class Bank extends Thread {
 
         @Override
         public void run() {
-            if (deposit != 0) {
-                int cashOperation;
-                do {
-                    cashOperation = new Random().nextInt(100) + 1; // 1..100
+            while (deposit != 0) {
+                synchronized (deposit) {
 
-                } while (cashOperation > deposit);
+                    if(deposit<=0 )break;
 
-                System.out.println("Bank has $" + deposit + " *** Operation " +
-                        numberOfOperation + ": = " + "-$" + cashOperation);
+                    int cashOperation = 0;
+                    do {
+                         cashOperation = new Random().nextInt(100) + 1; // 1..100
 
-                deposit -= cashOperation;
+                    } while (cashOperation > deposit && deposit>0);
 
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    if(deposit>0 ) {
+                        System.out.println("Bank has $" + deposit + " *** Operation " +
+                                numberOfOperation + ": = " + "-$" + cashOperation);
+
+                        deposit -= cashOperation;
+                    }
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
                 }
+
             }
+
         }
     }
 }

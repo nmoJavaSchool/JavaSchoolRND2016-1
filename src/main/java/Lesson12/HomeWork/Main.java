@@ -5,7 +5,7 @@ package Lesson12.HomeWork;
  */
 public class Main {
     public static void main(String[] args) {
-        Bank bank = new Bank(1500, 3);
+        Bank bank = new Bank(1000, 3);
         bank.start();
     }
 }
