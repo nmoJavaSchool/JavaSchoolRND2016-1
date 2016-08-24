@@ -1,5 +1,8 @@
 package Lesson13.HomeWork;
 
+import Lesson13.HomeWork.FirstTask.Task;
+import Lesson13.HomeWork.FirstTask.ThreadCallable;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -17,7 +20,7 @@ public class FirstMain {
             if(i==5)
                 nameOfTask = null;
 
-            Lesson13.HomeWork.Task<String> task = new Lesson13.HomeWork.Task<>(new ThreadCallable<String>(nameOfTask));
+            Task<String> task = new Task<>(new ThreadCallable<String>(nameOfTask));
 
             try {
                 arrayListOfTask.add(task.get());
