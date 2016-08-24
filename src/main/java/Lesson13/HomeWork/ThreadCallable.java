@@ -7,6 +7,7 @@ import java.util.concurrent.Callable;
  */
 public class ThreadCallable<V> implements Callable<V> {
     private V name;
+
     public ThreadCallable(V name) {
         this.name = name;
     }
