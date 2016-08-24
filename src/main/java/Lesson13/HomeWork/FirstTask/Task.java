@@ -15,7 +15,7 @@ public class Task<V> {
     }
 
 
-    public synchronized V get() throws Exception{
+    public  V get() throws Exception{
         if(flag)
             throw new CallableThreadException("CallableThreadException");
         futureTask.run();
