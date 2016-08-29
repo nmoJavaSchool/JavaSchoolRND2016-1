@@ -8,7 +8,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 
 public class ClientServerApp {
 
-    static class Message {
+    public static class Message {
         String user;
         String message;
 
@@ -18,11 +18,11 @@ public class ClientServerApp {
         }
     }
 
-    static class Client extends Thread {
+    public static class Client extends Thread {
         ArrayBlockingQueue<Message> messageService;
         String username;
 
-        Client(ArrayBlockingQueue<Message> messageService, String name) {
+        public Client(ArrayBlockingQueue<Message> messageService, String name) {
             this.messageService = messageService;
             username = name;
         }
@@ -53,10 +53,10 @@ public class ClientServerApp {
         }
     }
 
-    static class Server extends Thread {
+    public static class Server extends Thread {
         ArrayBlockingQueue<Message> messageService;
 
-        Server(ArrayBlockingQueue<Message> messageService) {
+        public Server(ArrayBlockingQueue<Message> messageService) {
             this.messageService = messageService;
         }
 
