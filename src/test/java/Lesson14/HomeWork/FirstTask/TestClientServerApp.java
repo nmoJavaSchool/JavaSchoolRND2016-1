@@ -29,7 +29,7 @@ public class TestClientServerApp {
                 Thread.sleep(1000);
             }
         }catch (Exception e){
-            
+
         }
         assertEquals(0,messageArrayBlockingQueue.size());
         for (int i = 0; i < 5; i++) {
