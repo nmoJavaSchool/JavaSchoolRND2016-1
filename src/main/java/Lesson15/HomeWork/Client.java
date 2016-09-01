@@ -13,13 +13,10 @@ import javafx.stage.Stage;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.io.EOFException;
 import java.io.IOException;
 import java.net.Socket;
 
-/**
- * Created by user on 28.04.16.
- */
+
 public class Client extends Application {
     private Socket socket;
     private DataInputStream inputFromServer;

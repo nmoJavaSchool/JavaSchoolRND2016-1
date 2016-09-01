@@ -7,16 +7,16 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
-import java.io.*;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Date;
 
-/**
- * Created by user on 28.04.16.
- */
+
 public class Server extends Application {
     ServerSocket serverSocket = null;
     final int COUNTER_CLIENT = 2;

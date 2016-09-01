@@ -2,12 +2,9 @@ package Lesson15.HomeWork;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 
-/**
- * Created by user on 28.04.16.
- */
+
 public class ChatThread implements Runnable {
     private DataInputStream inputFromClient;
     private ArrayList<DataOutputStream> arrayList;
