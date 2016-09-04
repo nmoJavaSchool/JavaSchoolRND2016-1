@@ -1,0 +1,417 @@
+     79    1       3       java.lang.String::equals (81 bytes)
+     80    2       3       java.lang.String::charAt (29 bytes)
+                              @ 18  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+     80    3       3       java.lang.String::length (6 bytes)
+     81    4       3       java.lang.String::hashCode (55 bytes)
+     82    5       3       java.lang.Object::<init> (1 bytes)
+     82    6     n 0       java.lang.System::arraycopy (native)   (static)
+     82    8       3       java.lang.String::indexOf (70 bytes)
+                              @ 66   java.lang.String::indexOfSupplementary (71 bytes)   callee is too large
+     83    9       3       java.lang.Math::min (11 bytes)
+     83    7       3       java.lang.AbstractStringBuilder::ensureCapacityInternal (16 bytes)
+                              @ 12   java.lang.AbstractStringBuilder::expandCapacity (50 bytes)   callee is too large
+     83   10       1       java.lang.ref.Reference::get (5 bytes)
+     83   11       1       java.lang.ThreadLocal::access$400 (5 bytes)
+     84   12       3       java.lang.AbstractStringBuilder::append (50 bytes)
+                              @ 5   java.lang.AbstractStringBuilder::appendNull (56 bytes)   callee is too large
+                              @ 10   java.lang.String::length (6 bytes)
+                              @ 21   java.lang.AbstractStringBuilder::ensureCapacityInternal (16 bytes)
+                                @ 12   java.lang.AbstractStringBuilder::expandCapacity (50 bytes)   callee is too large
+                              @ 35   java.lang.String::getChars (62 bytes)   callee is too large
+     84   13       3       java.lang.String::getChars (62 bytes)
+                              @ 9  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+                              @ 27  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+                              @ 43  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+                              @ 58   java.lang.System::arraycopy (0 bytes)   intrinsic
+     87   14       3       java.lang.CharacterData::of (120 bytes)
+     87   15       3       java.lang.CharacterDataLatin1::getProperties (11 bytes)
+     90   16       3       java.util.HashMap::hash (20 bytes)
+                              @ 9   java.lang.Object::hashCode (0 bytes)   no static binding
+     90   17     n 0       sun.misc.Unsafe::compareAndSwapLong (native)   
+     91   19       3       java.util.HashMap::putVal (300 bytes)
+                              @ 20   java.util.HashMap::resize (359 bytes)   callee is too large
+                              @ 56   java.util.HashMap::newNode (13 bytes)   no static binding
+                              @ 91   java.lang.Object::equals (11 bytes)   no static binding
+                              @ 123   java.util.HashMap$TreeNode::putTreeVal (314 bytes)   not inlineable
+                              @ 152   java.util.HashMap::newNode (13 bytes)   no static binding
+                              @ 169   java.util.HashMap::treeifyBin (110 bytes)   callee is too large
+                              @ 203   java.lang.Object::equals (11 bytes)   no static binding
+                              @ 253   java.util.HashMap::afterNodeAccess (1 bytes)   no static binding
+                              @ 288   java.util.HashMap::resize (359 bytes)   callee is too large
+                              @ 295   java.util.HashMap::afterNodeInsertion (1 bytes)   no static binding
+     92   22       1       java.lang.Object::<init> (1 bytes)
+     92    5       3       java.lang.Object::<init> (1 bytes)   made not entrant
+     92   27       3       java.lang.Integer::stringSize (21 bytes)
+     93   18       3       java.util.HashMap::put (13 bytes)
+                              @ 2   java.util.HashMap::hash (20 bytes)
+                                @ 9   java.lang.Object::hashCode (0 bytes)   no static binding
+                              @ 9   java.util.HashMap::putVal (300 bytes)   callee is too large
+     93   32       3       java.lang.Integer::getChars (131 bytes)
+     93   21       3       java.lang.Number::<init> (5 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)
+     93   23       3       java.lang.Integer::<init> (10 bytes)
+                              @ 1   java.lang.Number::<init> (5 bytes)
+                                @ 1   java.lang.Object::<init> (1 bytes)
+     94   24       3       java.util.HashMap$Node::<init> (26 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)
+     94   20       3       java.lang.String::<init> (10 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)
+     94   33       3       java.util.concurrent.atomic.AtomicLong::compareAndSet (13 bytes)
+                              @ 9   sun.misc.Unsafe::compareAndSwapLong (0 bytes)   intrinsic
+     94   34       3       java.util.Random::nextInt (7 bytes)
+                              @ 3   java.util.Random::next (47 bytes)   callee is too large
+     95   38       1       java.util.concurrent.atomic.AtomicLong::compareAndSet (13 bytes)
+                              @ 9   sun.misc.Unsafe::compareAndSwapLong (0 bytes)   intrinsic
+     95   33       3       java.util.concurrent.atomic.AtomicLong::compareAndSet (13 bytes)   made not entrant
+     95   35       3       java.util.Random::next (47 bytes)
+                              @ 8   java.util.concurrent.atomic.AtomicLong::get (5 bytes)
+                              @ 32   java.util.concurrent.atomic.AtomicLong::compareAndSet (13 bytes)
+                                @ 9   sun.misc.Unsafe::compareAndSwapLong (0 bytes)   intrinsic
+     95   25       3       java.util.HashMap::newNode (13 bytes)
+                              @ 9   java.util.HashMap$Node::<init> (26 bytes)
+                                @ 1   java.lang.Object::<init> (1 bytes)
+     95   26       3       java.util.HashMap::afterNodeInsertion (1 bytes)
+     96   28       3       java.lang.Integer::valueOf (32 bytes)
+                              @ 28   java.lang.Integer::<init> (10 bytes)
+                                @ 1   java.lang.Number::<init> (5 bytes)
+                                  @ 1   java.lang.Object::<init> (1 bytes)
+     96   39       4       java.lang.Integer::stringSize (21 bytes)
+     96   31       3       java.util.concurrent.atomic.AtomicLong::get (5 bytes)
+     96   40       1       java.util.HashMap::afterNodeInsertion (1 bytes)
+     96   26       3       java.util.HashMap::afterNodeInsertion (1 bytes)   made not entrant
+     96   36       3       java.lang.String::valueOf (5 bytes)
+                              @ 1   java.lang.Integer::toString (48 bytes)   callee is too large
+     96   37       3       java.lang.Integer::toString (48 bytes)
+                              @ 15   java.lang.Integer::stringSize (21 bytes)
+                              @ 24   java.lang.Integer::stringSize (21 bytes)
+                              @ 35   java.lang.Integer::getChars (131 bytes)   callee is too large
+                              @ 44   java.lang.String::<init> (10 bytes)
+                                @ 1   java.lang.Object::<init> (1 bytes)
+     97   29       3       java.lang.Integer::hashCode (8 bytes)
+                              @ 4   java.lang.Integer::hashCode (2 bytes)
+     97   30       3       java.lang.Integer::hashCode (2 bytes)
+     98   27       3       java.lang.Integer::stringSize (21 bytes)   made not entrant
+     98   41       4       java.lang.Integer::getChars (131 bytes)
+     99   43 %     4       java.lang.Integer::stringSize @ 2 (21 bytes)
+    101   42       4       java.util.HashMap::putVal (300 bytes)
+    102   37       3       java.lang.Integer::toString (48 bytes)   made not entrant
+                              @ 56   java.util.HashMap::newNode (13 bytes)   inline (hot)
+                               \-> TypeProfile (10864/10864 counts) = java/util/HashMap
+                                @ 9   java.util.HashMap$Node::<init> (26 bytes)   inline (hot)
+                                  @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                              @ 295   java.util.HashMap::afterNodeInsertion (1 bytes)   inline (hot)
+    106   32       3       java.lang.Integer::getChars (131 bytes)   made not entrant
+    106   50       4       java.util.Random::next (47 bytes)
+    107   19       3       java.util.HashMap::putVal (300 bytes)   made not entrant
+    107   45       4       java.util.HashMap::put (13 bytes)
+                              @ 8   java.util.concurrent.atomic.AtomicLong::get (5 bytes)   inline (hot)
+                              @ 32   java.util.concurrent.atomic.AtomicLong::compareAndSet (13 bytes)   inline (hot)
+                                @ 9   sun.misc.Unsafe::compareAndSwapLong (0 bytes)   (intrinsic)
+    108   35       3       java.util.Random::next (47 bytes)   made not entrant
+    108   52       4       java.lang.String::<init> (10 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+    109   20       3       java.lang.String::<init> (10 bytes)   made not entrant
+    109   47       4       java.lang.Integer::valueOf (32 bytes)
+                              @ 28   java.lang.Integer::<init> (10 bytes)   inline (hot)
+                                @ 1   java.lang.Number::<init> (5 bytes)   inline (hot)
+                                  @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+    110   28       3       java.lang.Integer::valueOf (32 bytes)   made not entrant
+    110   51       4       java.lang.String::valueOf (5 bytes)
+                              @ 2   java.util.HashMap::hash (20 bytes)   inline (hot)
+                                @ 9   java.lang.Integer::hashCode (8 bytes)   inline (hot)
+                                 \-> TypeProfile (18397/18397 counts) = java/lang/Integer
+                                  @ 4   java.lang.Integer::hashCode (2 bytes)   inline (hot)
+                              @ 9   java.util.HashMap::putVal (300 bytes)   inline (hot)
+                                @ 56   java.util.HashMap::newNode (13 bytes)   inline (hot)
+                                 \-> TypeProfile (17947/17947 counts) = java/util/HashMap
+                                  @ 9   java.util.HashMap$Node::<init> (26 bytes)   inline (hot)
+                                    @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                                @ 295   java.util.HashMap::afterNodeInsertion (1 bytes)   inline (hot)
+    116   18       3       java.util.HashMap::put (13 bytes)   made not entrant
+    116   49       4       java.util.Random::nextInt (7 bytes)
+                              @ 3   java.util.Random::next (47 bytes)   inline (hot)
+                                @ 8   java.util.concurrent.atomic.AtomicLong::get (5 bytes)   inline (hot)
+                                @ 32   java.util.concurrent.atomic.AtomicLong::compareAndSet (13 bytes)   inline (hot)
+                                  @ 9   sun.misc.Unsafe::compareAndSwapLong (0 bytes)   (intrinsic)
+    118   34       3       java.util.Random::nextInt (7 bytes)   made not entrant
+    118   44       4       java.lang.Integer::toString (48 bytes)
+                              @ 1   java.lang.Integer::toString (48 bytes)   inline (hot)
+                                @ 15   java.lang.Integer::stringSize (21 bytes)   inline (hot)
+                                @ 24   java.lang.Integer::stringSize (21 bytes)   inline (hot)
+                                @ 35   java.lang.Integer::getChars (131 bytes)   inline (hot)
+                                @ 44   java.lang.String::<init> (10 bytes)   inline (hot)
+                                  @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                              @ 15   java.lang.Integer::stringSize (21 bytes)   inline (hot)
+                              @ 24   java.lang.Integer::stringSize (21 bytes)   inline (hot)
+                              @ 35   java.lang.Integer::getChars (131 bytes)   inline (hot)
+                              @ 44   java.lang.String::<init> (10 bytes)   inline (hot)
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+    129   36       3       java.lang.String::valueOf (5 bytes)   made not entrant
+    129   48       4       java.lang.Integer::hashCode (8 bytes)
+                              @ 4   java.lang.Integer::hashCode (2 bytes)   inline (hot)
+    129   29       3       java.lang.Integer::hashCode (8 bytes)   made not entrant
+    129   46       4       java.util.HashMap::newNode (13 bytes)
+    130   53 %     3       Lesson16.HomeWork.Task1::main @ 24 (123 bytes)
+                              @ 9   java.util.HashMap::<init> (8 bytes)
+                                @ 4   java.util.HashMap::<init> (98 bytes)   callee is too large
+                              @ 17   java.util.Random::<init> (12 bytes)
+                              @ 9   java.util.HashMap$Node::<init> (26 bytes)   inline (hot)
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                                @ 1   java.util.Random::seedUniquifier (29 bytes)
+                                  @ 3   java.util.concurrent.atomic.AtomicLong::get (5 bytes)
+                                  @ 18   java.util.concurrent.atomic.AtomicLong::compareAndSet (13 bytes)
+                                    @ 9   sun.misc.Unsafe::compareAndSwapLong (0 bytes)   intrinsic
+                                @ 4   java.lang.System::nanoTime (0 bytes)   intrinsic
+                                @ 8   java.util.Random::<init> (53 bytes)   callee is too large
+                              @ 34   java.lang.Integer::valueOf (32 bytes)
+    131   25       3       java.util.HashMap::newNode (13 bytes)   made not entrant
+                                @ 28   java.lang.Integer::<init> (10 bytes)
+                                  @ 1   java.lang.Number::<init> (5 bytes)
+                                    @ 1   java.lang.Object::<init> (1 bytes)
+                              @ 38   java.util.Random::nextInt (7 bytes)
+                                @ 3   java.util.Random::next (47 bytes)   callee is too large
+                              @ 41   java.lang.String::valueOf (5 bytes)
+                                @ 1   java.lang.Integer::toString (48 bytes)   callee is too large
+                              @ 44   java.util.Map::put (0 bytes)   no static binding
+                              @ 57   java.util.Map::entrySet (0 bytes)   no static binding
+                              @ 66  java/util/Set::iterator (not loaded)   not inlineable
+                              @ 75  java/util/Iterator::hasNext (not loaded)   not inlineable
+                              @ 85  java/util/Iterator::next (not loaded)   not inlineable
+                              @ 97  java/util/Map$Entry::getKey (not loaded)   not inlineable
+                              @ 107  java/util/Map$Entry::getValue (not loaded)   not inlineable
+                              @ 115   Lesson16.HomeWork.Task1::sum (24 bytes)
+                                @ 4  java/lang/StringBuilder::<init> (not loaded)   not inlineable
+                                @ 8  java/lang/StringBuilder::append (not loaded)   not inlineable
+                                @ 13  java/lang/StringBuilder::append (not loaded)   not inlineable
+                                @ 17  java/lang/StringBuilder::append (not loaded)   not inlineable
+                                @ 20  java/lang/StringBuilder::toString (not loaded)   not inlineable
+    133   54       3       Lesson16.HomeWork.Task1::main (123 bytes)
+                              @ 9   java.util.HashMap::<init> (8 bytes)
+                                @ 4   java.util.HashMap::<init> (98 bytes)   callee is too large
+                              @ 17   java.util.Random::<init> (12 bytes)
+                                @ 1   java.util.Random::seedUniquifier (29 bytes)
+                                  @ 3   java.util.concurrent.atomic.AtomicLong::get (5 bytes)
+                                  @ 18   java.util.concurrent.atomic.AtomicLong::compareAndSet (13 bytes)
+                                    @ 9   sun.misc.Unsafe::compareAndSwapLong (0 bytes)   intrinsic
+                                @ 4   java.lang.System::nanoTime (0 bytes)   intrinsic
+                                @ 8   java.util.Random::<init> (53 bytes)   callee is too large
+                              @ 34   java.lang.Integer::valueOf (32 bytes)
+                                @ 28   java.lang.Integer::<init> (10 bytes)
+                                  @ 1   java.lang.Number::<init> (5 bytes)
+                                    @ 1   java.lang.Object::<init> (1 bytes)
+                              @ 38   java.util.Random::nextInt (7 bytes)
+                                @ 3   java.util.Random::next (47 bytes)   callee is too large
+                              @ 41   java.lang.String::valueOf (5 bytes)
+                                @ 1   java.lang.Integer::toString (48 bytes)   callee is too large
+                              @ 44   java.util.HashMap::put (13 bytes)
+                                @ 2   java.util.HashMap::hash (20 bytes)
+                                  @ 9   java.lang.Object::hashCode (0 bytes)   no static binding
+                                @ 9   java.util.HashMap::putVal (300 bytes)   callee is too large
+                              @ 57   java.util.HashMap::entrySet (27 bytes)
+                                @ 15  java/util/HashMap$EntrySet::<init> (not loaded)   not inlineable
+                              @ 66  java/util/Set::iterator (not loaded)   not inlineable
+                              @ 75  java/util/Iterator::hasNext (not loaded)   not inlineable
+                              @ 85  java/util/Iterator::next (not loaded)   not inlineable
+                              @ 97  java/util/Map$Entry::getKey (not loaded)   not inlineable
+                              @ 107  java/util/Map$Entry::getValue (not loaded)   not inlineable
+                              @ 115   Lesson16.HomeWork.Task1::sum (24 bytes)
+                                @ 4  java/lang/StringBuilder::<init> (not loaded)   not inlineable
+                                @ 8  java/lang/StringBuilder::append (not loaded)   not inlineable
+                                @ 13  java/lang/StringBuilder::append (not loaded)   not inlineable
+                                @ 17  java/lang/StringBuilder::append (not loaded)   not inlineable
+                                @ 20  java/lang/StringBuilder::toString (not loaded)   not inlineable
+    139   45       4       java.util.HashMap::put (13 bytes)   made not entrant
+    142   55 %     4       java.util.HashMap::resize @ 154 (359 bytes)
+    148   56       3       java.util.HashMap::put (13 bytes)
+    148   57       4       java.util.HashMap::hash (20 bytes)
+                              @ 2   java.util.HashMap::hash (20 bytes)
+                                @ 9   java.lang.Object::hashCode (0 bytes)   no static binding
+                              @ 9   java.util.HashMap::putVal (300 bytes)   callee is too large
+                              @ 9   java.lang.Integer::hashCode (8 bytes)   inline (hot)
+                               \-> TypeProfile (30983/30983 counts) = java/lang/Integer
+                                @ 4   java.lang.Integer::hashCode (2 bytes)   inline (hot)
+    149   16       3       java.util.HashMap::hash (20 bytes)   made not entrant
+    149   42       4       java.util.HashMap::putVal (300 bytes)   made not entrant
+    151   59       3       java.lang.StringBuilder::append (8 bytes)
+                              @ 2   java.lang.AbstractStringBuilder::append (50 bytes)   callee is too large
+    151   60       3       java.lang.String::<init> (82 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)
+                              @ 13  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+                              @ 30  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+                              @ 65  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+                              @ 75   java.util.Arrays::copyOfRange (63 bytes)   callee is too large
+    152   61       1       java.util.HashMap$Node::getKey (5 bytes)
+    152   62       1       java.util.HashMap$Node::getValue (5 bytes)
+    152   58       3       java.util.Arrays::copyOfRange (63 bytes)
+                              @ 16   java.lang.StringBuilder::<init> (7 bytes)
+                                @ 3   java.lang.AbstractStringBuilder::<init> (12 bytes)
+                                  @ 1   java.lang.Object::<init> (1 bytes)
+                              @ 20   java.lang.StringBuilder::append (8 bytes)
+                                @ 2   java.lang.AbstractStringBuilder::append (62 bytes)   callee is too large
+                              @ 25   java.lang.StringBuilder::append (8 bytes)
+                                @ 2   java.lang.AbstractStringBuilder::append (50 bytes)   callee is too large
+                              @ 29   java.lang.StringBuilder::append (8 bytes)
+                                @ 2   java.lang.AbstractStringBuilder::append (62 bytes)   callee is too large
+                              @ 32   java.lang.StringBuilder::toString (17 bytes)
+                                @ 13   java.lang.String::<init> (82 bytes)   callee is too large
+                              @ 35   java.lang.IllegalArgumentException::<init> (6 bytes)   don't inline Throwable constructors
+                              @ 54   java.lang.Math::min (11 bytes)
+                              @ 57   java.lang.System::arraycopy (0 bytes)   intrinsic
+    153   63       3       java.lang.AbstractStringBuilder::<init> (12 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)
+    154   66       3       java.lang.StringBuilder::<init> (7 bytes)
+                              @ 3   java.lang.AbstractStringBuilder::<init> (12 bytes)
+                                @ 1   java.lang.Object::<init> (1 bytes)
+    154   65       3       java.lang.StringBuilder::toString (17 bytes)
+                              @ 13   java.lang.String::<init> (82 bytes)   callee is too large
+    154   64       3       java.lang.StringBuilder::append (9 bytes)
+                              @ 2   java.lang.String::valueOf (14 bytes)
+                                @ 10   java.lang.Object::toString (36 bytes)   no static binding
+                              @ 5   java.lang.StringBuilder::append (8 bytes)
+                                @ 2   java.lang.AbstractStringBuilder::append (50 bytes)   callee is too large
+    154   67       3       java.lang.String::valueOf (14 bytes)
+                              @ 10   java.lang.Object::toString (36 bytes)   no static binding
+    154   72       3       java.lang.Integer::toString (8 bytes)
+                              @ 4   java.lang.Integer::toString (48 bytes)   callee is too large
+    155   68       3       java.util.HashMap$HashIterator::hasNext (13 bytes)
+    155   69       3       java.util.HashMap$EntryIterator::next (5 bytes)
+                              @ 1   java.util.HashMap$EntryIterator::next (5 bytes)
+                                @ 1   java.util.HashMap$HashIterator::nextNode (100 bytes)   callee is too large
+    155   70       3       java.util.HashMap$EntryIterator::next (5 bytes)
+                              @ 1   java.util.HashMap$HashIterator::nextNode (100 bytes)   callee is too large
+    155   71       3       java.util.HashMap$HashIterator::nextNode (100 bytes)
+                              @ 23  java/util/ConcurrentModificationException::<init> (not loaded)   not inlineable
+                              @ 35  java/util/NoSuchElementException::<init> (not loaded)   not inlineable
+    156   75       3       java.util.Arrays::copyOf (19 bytes)
+                              @ 11   java.lang.Math::min (11 bytes)
+                              @ 14   java.lang.System::arraycopy (0 bytes)   intrinsic
+    156   76       3       java.lang.AbstractStringBuilder::expandCapacity (50 bytes)
+            156   74       4       java.lang.String::getChars (62 bytes)
+                      @ 30   java.lang.OutOfMemoryError::<init> (5 bytes)   don't inline Throwable constructors
+                              @ 43   java.util.Arrays::copyOf (19 bytes)
+                                @ 11   java.lang.Math::min (11 bytes)
+                                @ 14   java.lang.System::arraycopy (0 bytes)   intrinsic
+                              @ 58   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+    158   13       3       java.lang.String::getChars (62 bytes)   made not entrant
+    158   73       4       java.lang.AbstractStringBuilder::append (50 bytes)
+    159   77       4       java.lang.StringBuilder::append (8 bytes)
+                              @ 10   java.lang.String::length (6 bytes)   inline (hot)
+                              @ 21   java.lang.AbstractStringBuilder::ensureCapacityInternal (16 bytes)   inline (hot)
+                                @ 12   java.lang.AbstractStringBuilder::expandCapacity (50 bytes)   inline (hot)
+                                  @ 43   java.util.Arrays::copyOf (19 bytes)   inline (hot)
+                                    @ 11   java.lang.Math::min (11 bytes)   (intrinsic)
+                                    @ 14   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+                              @ 35   java.lang.String::getChars (62 bytes)   inline (hot)
+                                @ 58   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+                              @ 2   java.lang.AbstractStringBuilder::append (50 bytes)   inline (hot)
+                                @ 10   java.lang.String::length (6 bytes)   inline (hot)
+                                @ 21   java.lang.AbstractStringBuilder::ensureCapacityInternal (16 bytes)   inline (hot)
+                                  @ 12   java.lang.AbstractStringBuilder::expandCapacity (50 bytes)   inline (hot)
+                                    @ 43   java.util.Arrays::copyOf (19 bytes)   inline (hot)
+                                      @ 11   java.lang.Math::min (11 bytes)   (intrinsic)
+                                      @ 14   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+                                @ 35   java.lang.String::getChars (62 bytes)   inline (hot)
+                                  @ 58   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+    164   12       3       java.lang.AbstractStringBuilder::append (50 bytes)   made not entrant
+    164   82       4       java.lang.StringBuilder::append (9 bytes)
+    166   59       3       java.lang.StringBuilder::append (8 bytes)   made not entrant
+    166   85       4       java.util.HashMap$HashIterator::nextNode (100 bytes)
+    168   71       3       java.util.HashMap$HashIterator::nextNode (100 bytes)   made not entrant
+    168   79       4       java.util.Arrays::copyOfRange (63 bytes)
+                              @ 54   java.lang.Math::min (11 bytes)   (intrinsic)
+                              @ 57   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+    172   58       3       java.util.Arrays::copyOfRange (63 bytes)   made not entrant
+    172   80       4       java.lang.String::<init> (82 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                              @ 75   java.util.Arrays::copyOfRange (63 bytes)   inline (hot)
+                                @ 54   java.lang.Math::min (11 bytes)   (intrinsic)
+                                @ 57   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+                              @ 2   java.lang.String::valueOf (14 bytes)   inline (hot)
+                                @ 10   java.lang.Integer::toString (8 bytes)   inline (hot)
+                                 \-> TypeProfile (11118/11118 counts) = java/lang/Integer
+                                  @ 4   java.lang.Integer::toString (48 bytes)   inline (hot)
+                                    @ 15   java.lang.Integer::stringSize (21 bytes)   inline (hot)
+                                    @ 24   java.lang.Integer::stringSize (21 bytes)   inline (hot)
+                                    @ 35   java.lang.Integer::getChars (131 bytes)   inline (hot)
+                                    @ 44   java.lang.String::<init> (10 bytes)   inline (hot)
+                                      @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                              @ 5   java.lang.StringBuilder::append (8 bytes)   inline (hot)
+                                @ 2   java.lang.AbstractStringBuilder::append (50 bytes)   inline (hot)
+                                  @ 10   java.lang.String::length (6 bytes)   inline (hot)
+                                  @ 21   java.lang.AbstractStringBuilder::ensureCapacityInternal (16 bytes)   inline (hot)
+                                    @ 12   java.lang.AbstractStringBuilder::expandCapacity (50 bytes)   inline (hot)
+                                      @ 43   java.util.Arrays::copyOf (19 bytes)   inline (hot)
+                                        @ 11   java.lang.Math::min (11 bytes)   (intrinsic)
+                                        @ 14   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+                                  @ 35   java.lang.String::getChars (62 bytes)   inline (hot)
+                                    @ 58   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+    176   60       3       java.lang.String::<init> (82 bytes)   made not entrant
+    176   78       4       java.lang.StringBuilder::toString (17 bytes)
+                              @ 13   java.lang.String::<init> (82 bytes)   inline (hot)
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                                @ 75   java.util.Arrays::copyOfRange (63 bytes)   inline (hot)
+                                  @ 54   java.lang.Math::min (11 bytes)   (intrinsic)
+                                  @ 57   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+    181   65       3       java.lang.StringBuilder::toString (17 bytes)   made not entrant
+    181   64       3       java.lang.StringBuilder::append (9 bytes)   made not entrant
+    181   81       4       java.lang.StringBuilder::<init> (7 bytes)
+    181   83       4       java.util.HashMap$HashIterator::hasNext (13 bytes)
+    182   68       3       java.util.HashMap$HashIterator::hasNext (13 bytes)   made not entrant
+    182   84       4       java.util.HashMap$EntryIterator::next (5 bytes)
+                              @ 3   java.lang.AbstractStringBuilder::<init> (12 bytes)   inline (hot)
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+    182   66       3       java.lang.StringBuilder::<init> (7 bytes)   made not entrant
+    182   86       4       java.lang.Integer::toString (8 bytes)
+                              @ 1   java.util.HashMap$EntryIterator::next (5 bytes)   inline (hot)
+                                @ 1   java.util.HashMap$HashIterator::nextNode (100 bytes)   inline (hot)
+    183   69       3       java.util.HashMap$EntryIterator::next (5 bytes)   made not entrant
+    183   87 %     4       Lesson16.HomeWork.Task1::main @ 73 (123 bytes)
+                              @ 4   java.lang.Integer::toString (48 bytes)   inline (hot)
+                                @ 15   java.lang.Integer::stringSize (21 bytes)   inline (hot)
+                                @ 24   java.lang.Integer::stringSize (21 bytes)   inline (hot)
+                                @ 35   java.lang.Integer::getChars (131 bytes)   inline (hot)
+                                @ 44   java.lang.String::<init> (10 bytes)   inline (hot)
+                                  @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+    220   72       3       java.lang.Integer::toString (8 bytes)   made not entrant
+                              @ 75   java.util.HashMap$HashIterator::hasNext (13 bytes)   inline (hot)
+                               \-> TypeProfile (35610/35610 counts) = java/util/HashMap$EntryIterator
+                              @ 85   java.util.HashMap$EntryIterator::next (5 bytes)   inline (hot)
+                                @ 1   java.util.HashMap$EntryIterator::next (5 bytes)   inline (hot)
+                                  @ 1   java.util.HashMap$HashIterator::nextNode (100 bytes)   inline (hot)
+                              @ 97   java.util.HashMap$Node::getKey (5 bytes)   accessor
+                              @ 107   java.util.HashMap$Node::getValue (5 bytes)   accessor
+                              @ 115   Lesson16.HomeWork.Task1::sum (24 bytes)   inline (hot)
+                                @ 4   java.lang.StringBuilder::<init> (7 bytes)   inline (hot)
+                                  @ 3   java.lang.AbstractStringBuilder::<init> (12 bytes)   inline (hot)
+                                    @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                                @ 8   java.lang.StringBuilder::append (8 bytes)   inline (hot)
+                                  @ 2   java.lang.AbstractStringBuilder::append (50 bytes)   inline (hot)
+                                    @ 10   java.lang.String::length (6 bytes)   inline (hot)
+                                    @ 21   java.lang.AbstractStringBuilder::ensureCapacityInternal (16 bytes)   inline (hot)
+                                      @ 12   java.lang.AbstractStringBuilder::expandCapacity (50 bytes)   inline (hot)
+                                        @ 43   java.util.Arrays::copyOf (19 bytes)   inline (hot)
+                                          @ 11   java.lang.Math::min (11 bytes)   (intrinsic)
+                                          @ 14   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+                                    @ 35   java.lang.String::getChars (62 bytes)   inline (hot)
+                                      @ 58   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+                                @ 13   java.lang.StringBuilder::append (8 bytes)   inline (hot)
+                                  @ 2   java.lang.AbstractStringBuilder::append (50 bytes)   inline (hot)
+                                    @ 10   java.lang.String::length (6 bytes)   inline (hot)
+                                    @ 21   java.lang.AbstractStringBuilder::ensureCapacityInternal (16 bytes)   inline (hot)
+                                      @ 12   java.lang.AbstractStringBuilder::expandCapacity (50 bytes)   inline (hot)
+                                        @ 43   java.util.Arrays::copyOf (19 bytes)   inline (hot)
+                                          @ 11   java.lang.Math::min (11 bytes)   (intrinsic)
+                                          @ 14   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+                                    @ 35   java.lang.String::getChars (62 bytes)   inline (hot)
+                                      @ 58   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+                                @ 17   java.lang.StringBuilder::append (9 bytes)   already compiled into a big method
+                                @ 20   java.lang.StringBuilder::toString (17 bytes)   inline (hot)
+                                  @ 13   java.lang.String::<init> (82 bytes)   inline (hot)
+                                    @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                                    @ 75   java.util.Arrays::copyOfRange (63 bytes)   inline (hot)
+                                      @ 54   java.lang.Math::min (11 bytes)   (intrinsic)
+                                      @ 57   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+    226   84       4       java.util.HashMap$EntryIterator::next (5 bytes)   made not entrant
+    227   88 %     4       java.util.HashMap$HashIterator::nextNode @ 68 (100 bytes)
+    233   88 %     4       java.util.HashMap$HashIterator::nextNode @ -2 (100 bytes)   made not entrant
+    233   83       4       java.util.HashMap$HashIterator::hasNext (13 bytes)   made not entrant

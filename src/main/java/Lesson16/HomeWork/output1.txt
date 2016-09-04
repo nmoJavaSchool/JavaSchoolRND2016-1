@@ -1,0 +1,117 @@
+    103    1       3       java.lang.String::equals (81 bytes)
+    106    2       3       java.lang.String::charAt (29 bytes)
+    106    3       3       java.lang.String::length (6 bytes)
+    107    4       3       java.lang.String::hashCode (55 bytes)
+    109    5       3       java.lang.Object::<init> (1 bytes)
+    110    6     n 0       java.lang.System::arraycopy (native)   (static)
+    110    8       3       java.lang.String::indexOf (70 bytes)
+    110    7       3       java.lang.AbstractStringBuilder::ensureCapacityInternal (16 bytes)
+    110    9       3       java.lang.Math::min (11 bytes)
+    111   10       1       java.lang.ref.Reference::get (5 bytes)
+    111   11       1       java.lang.ThreadLocal::access$400 (5 bytes)
+    112   12       3       java.lang.AbstractStringBuilder::append (50 bytes)
+    112   13       3       java.lang.String::getChars (62 bytes)
+    115   14       3       java.lang.CharacterData::of (120 bytes)
+    116   15       3       java.lang.CharacterDataLatin1::getProperties (11 bytes)
+    119   16       3       java.util.HashMap::hash (20 bytes)
+    120   17     n 0       sun.misc.Unsafe::compareAndSwapLong (native)   
+    120   19       3       java.util.HashMap::putVal (300 bytes)
+    122   22       1       java.lang.Object::<init> (1 bytes)
+    122    5       3       java.lang.Object::<init> (1 bytes)   made not entrant
+    122   18       3       java.util.HashMap::put (13 bytes)
+    122   27       3       java.lang.Integer::stringSize (21 bytes)
+    123   21       3       java.lang.Number::<init> (5 bytes)
+    123   23       3       java.lang.Integer::<init> (10 bytes)
+    123   34       3       java.lang.Integer::getChars (131 bytes)
+    124   25       3       java.util.HashMap::newNode (13 bytes)
+    124   26       3       java.util.HashMap::afterNodeInsertion (1 bytes)
+    124   24       3       java.util.HashMap$Node::<init> (26 bytes)
+    124   20       3       java.lang.String::<init> (10 bytes)
+    124   28       3       java.lang.Integer::valueOf (32 bytes)
+    125   29       3       java.lang.Integer::hashCode (8 bytes)
+    125   38       1       java.util.HashMap::afterNodeInsertion (1 bytes)
+    125   26       3       java.util.HashMap::afterNodeInsertion (1 bytes)   made not entrant
+    125   30       3       java.lang.Integer::hashCode (2 bytes)
+    125   31       3       java.util.concurrent.atomic.AtomicLong::get (5 bytes)
+    125   32       3       java.util.concurrent.atomic.AtomicLong::compareAndSet (13 bytes)
+    125   33       3       java.util.Random::nextInt (7 bytes)
+    126   35       3       java.util.Random::next (47 bytes)
+    126   36       3       java.lang.String::valueOf (5 bytes)
+    126   37       3       java.lang.Integer::toString (48 bytes)
+    126   39       4       java.lang.Integer::stringSize (21 bytes)
+    128   27       3       java.lang.Integer::stringSize (21 bytes)   made not entrant
+    128   40       4       java.lang.Integer::getChars (131 bytes)
+    129   41       4       java.util.HashMap::putVal (300 bytes)
+    134   19       3       java.util.HashMap::putVal (300 bytes)   made not entrant
+    134   45 %     4       java.lang.Integer::stringSize @ 2 (21 bytes)
+    136   34       3       java.lang.Integer::getChars (131 bytes)   made not entrant
+    136   49       4       java.util.Random::next (47 bytes)
+    136   43       4       java.util.HashMap::put (13 bytes)
+    138   35       3       java.util.Random::next (47 bytes)   made not entrant
+    138   44       4       java.util.HashMap::newNode (13 bytes)
+    139   25       3       java.util.HashMap::newNode (13 bytes)   made not entrant
+    139   50       4       java.lang.String::valueOf (5 bytes)
+    143   18       3       java.util.HashMap::put (13 bytes)   made not entrant
+    143   46       4       java.lang.Integer::valueOf (32 bytes)
+    145   28       3       java.lang.Integer::valueOf (32 bytes)   made not entrant
+    145   47       4       java.lang.Integer::hashCode (8 bytes)
+    146   29       3       java.lang.Integer::hashCode (8 bytes)   made not entrant
+    146   42       4       java.lang.Integer::toString (48 bytes)
+    155   36       3       java.lang.String::valueOf (5 bytes)   made not entrant
+    155   48       4       java.util.Random::nextInt (7 bytes)
+    156   33       3       java.util.Random::nextInt (7 bytes)   made not entrant
+    160   51 %     3       Lesson16.HomeWork.Task1::main @ 24 (123 bytes)
+    162   52       3       Lesson16.HomeWork.Task1::main (123 bytes)
+    163   37       3       java.lang.Integer::toString (48 bytes)   made not entrant
+    167   43       4       java.util.HashMap::put (13 bytes)   made not entrant
+    171   53 %     4       java.util.HashMap::resize @ 154 (359 bytes)
+    176   54       3       java.util.HashMap::put (13 bytes)
+    177   55       4       java.util.HashMap::hash (20 bytes)
+    177   41       4       java.util.HashMap::putVal (300 bytes)   made not entrant
+    178   16       3       java.util.HashMap::hash (20 bytes)   made not entrant
+    178   56       3       java.util.Arrays::copyOfRange (63 bytes)
+    179   57       3       java.lang.StringBuilder::append (8 bytes)
+    179   58       3       java.lang.String::<init> (82 bytes)
+    180   59       1       java.util.HashMap$Node::getKey (5 bytes)
+    180   62       3       java.lang.AbstractStringBuilder::<init> (12 bytes)
+    180   61       3       java.lang.StringBuilder::<init> (7 bytes)
+    181   63       3       java.lang.StringBuilder::toString (17 bytes)
+    181   64       3       java.lang.StringBuilder::append (9 bytes)
+    182   65       3       java.lang.String::valueOf (14 bytes)
+    182   66       3       java.util.HashMap$HashIterator::hasNext (13 bytes)
+    182   67       3       java.util.HashMap$EntryIterator::next (5 bytes)
+    182   68       3       java.util.HashMap$EntryIterator::next (5 bytes)
+    183   69       3       java.util.HashMap$HashIterator::nextNode (100 bytes)
+    183   71       4       java.lang.AbstractStringBuilder::append (50 bytes)
+    183   60       1       java.util.HashMap$Node::getValue (5 bytes)
+    183   70       3       java.lang.Integer::toString (8 bytes)
+    183   72       3       java.util.Arrays::copyOf (19 bytes)
+    184   74       3       java.lang.AbstractStringBuilder::expandCapacity (50 bytes)
+    184   75       4       java.lang.String::getChars (62 bytes)
+    186   13       3       java.lang.String::getChars (62 bytes)   made not entrant
+    187   73       4       java.lang.StringBuilder::append (8 bytes)
+    190   12       3       java.lang.AbstractStringBuilder::append (50 bytes)   made not entrant
+    190   76       4       java.util.Arrays::copyOfRange (63 bytes)
+    192   56       3       java.util.Arrays::copyOfRange (63 bytes)   made not entrant
+    192   83       4       java.util.HashMap$HashIterator::nextNode (100 bytes)
+    194   57       3       java.lang.StringBuilder::append (8 bytes)   made not entrant
+    194   79       4       java.lang.String::<init> (82 bytes)
+    194   69       3       java.util.HashMap$HashIterator::nextNode (100 bytes)   made not entrant
+    194   78       4       java.lang.StringBuilder::toString (17 bytes)
+    197   63       3       java.lang.StringBuilder::toString (17 bytes)   made not entrant
+    197   77       4       java.lang.StringBuilder::<init> (7 bytes)
+    197   58       3       java.lang.String::<init> (82 bytes)   made not entrant
+    197   81       4       java.util.HashMap$HashIterator::hasNext (13 bytes)
+    198   61       3       java.lang.StringBuilder::<init> (7 bytes)   made not entrant
+    198   82       4       java.util.HashMap$EntryIterator::next (5 bytes)
+    198   66       3       java.util.HashMap$HashIterator::hasNext (13 bytes)   made not entrant
+    198   84       4       java.lang.Integer::toString (8 bytes)
+    200   67       3       java.util.HashMap$EntryIterator::next (5 bytes)   made not entrant
+    200   80       4       java.lang.StringBuilder::append (9 bytes)
+    213   70       3       java.lang.Integer::toString (8 bytes)   made not entrant
+    213   85 %     4       Lesson16.HomeWork.Task1::main @ 73 (123 bytes)
+    238   64       3       java.lang.StringBuilder::append (9 bytes)   made not entrant
+    263   82       4       java.util.HashMap$EntryIterator::next (5 bytes)   made not entrant
+    265   86 %     4       java.util.HashMap$HashIterator::nextNode @ 68 (100 bytes)
+    270   86 %     4       java.util.HashMap$HashIterator::nextNode @ -2 (100 bytes)   made not entrant
+    270   81       4       java.util.HashMap$HashIterator::hasNext (13 bytes)   made not entrant
