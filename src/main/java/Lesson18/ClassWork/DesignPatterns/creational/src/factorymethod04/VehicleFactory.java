@@ -9,7 +9,7 @@ package Lesson18.ClassWork.DesignPatterns.creational.src.factorymethod04;
  *  without the express written permission of the publisher.
  */
 
-import carsandengines.*;
+import Lesson18.ClassWork.DesignPatterns.creational.src.carsandengines.*;
 
 public abstract class VehicleFactory {
 
