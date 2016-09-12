@@ -1,4 +1,4 @@
-package Lesson18.HomeWork;
+package Lesson18.HomeWork.Proxy;
 
 /**
  * Created by user on 11.09.16.

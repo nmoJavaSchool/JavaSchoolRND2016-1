@@ -1,4 +1,4 @@
-package Lesson18.HomeWork;
+package Lesson18.HomeWork.Proxy;
 
 import javafx.scene.control.Button;
 
